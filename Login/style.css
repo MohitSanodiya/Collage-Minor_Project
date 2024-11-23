@@ -1,0 +1,178 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1499748926165-1085fc69e9fc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fHw%3D);
+  background-size: cover;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#login {
+  height: 400px;
+  width: 300px;
+  background-color: grey;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5%;
+  box-shadow: 5px 3px 15px rgba(113, 115, 119, 0.5);
+  /* position: relative; */
+
+  opacity: 0;
+  transform: translateY(70px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#login-details {
+  margin-top: 40px;
+}
+
+/* Added User Type Styles */
+.user-type {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.user-type-label {
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 900;
+  border-radius: 10px;
+  transition: all 0.3s;
+  background: #f0f0f028;
+}
+
+.user-type input {
+  display: none;
+}
+
+.user-type input:checked + i {
+  color: #fff;
+  background: #6a11cb;
+}
+
+.user-type label i {
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 50%;
+  color: #444;
+  background: #e0e0e0;
+}
+
+h2 {
+  margin-top: 16px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#fm {
+  font-size: 14.5px;
+  margin-top: 25px;
+  margin-left: 30px;
+  height: 25px;
+  padding: 10px;
+  width: 75%;
+  border: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  position: relative;
+}
+
+
+/* 
+.icon1 i,
+.icon2 i {
+  color: white;
+  margin-top: 10%;
+} */
+
+#option {
+  color: white;
+  margin: 13px;
+  display: flex;
+  margin-top: 13px;
+  margin-left: 20px;
+  justify-content: space-around;
+}
+
+#input1 {
+  margin-right: 5px;
+}
+
+p {
+  margin-right: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button {
+  margin-left: 25px;
+  border: none;
+  width: 80%;
+  height: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+#ctacc,
+#register {
+  color: white;
+  /* font-size: 20px; */
+}
+
+#op {
+  display: flex;
+  margin-top: 16px;
+  padding-left: 25px;
+}
+
+#fm::placeholder {
+  color: rgba(254, 254, 254, 0.598); /* Change this to your desired color for the username placeholder */
+}
+
+#fm[type="password"]::placeholder {
+  color: rgba(254, 254, 254, 0.657); /* Change this to your desired color for the password placeholder */
+}
+
+#login-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#login-options label {
+  color: white;
+  font-size: 16px;
+}

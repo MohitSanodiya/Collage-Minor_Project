@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subject Attendance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <button class="btn">+ Add New</button>
+      <button class="btn">⬇ Download Attendance</button>
+      <button class="btn">🔍 Filter</button>
+      <button class="btn preview">⬅ Preview</button>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Subject Attendance</h1>
+        <div class="header-controls">
+          <label for="section">Section: </label>
+          <select id="section">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+          <button class="calendar-btn">📅 Calendar</button>
+        </div>
+        <p>Selected Date: <span id="selected-date">06-10-2021</span></p>
+      </header>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Roll Number</th>
+            <th>Attendance %</th>
+            <th>P/A</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Repeat this row for students -->
+          <tr>
+            <td>Aditya Yadav</td>
+            <td>0115CS221146</td>
+            <td>20%</td>
+            <td><input type="checkbox" checked></td>
+          </tr>
+          <tr>
+            <td>Mohit</td>
+            <td>0115CS221141</td>
+            <td>20%</td>
+            <td><input type="checkbox" checked></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

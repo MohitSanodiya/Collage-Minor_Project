@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#main {
+    background-image: linear-gradient(to bottom right, #9e19c7a7,  rgba(29, 223, 29, 0.588));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+#forgotPassword {
+    width: 350px; 
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+
+h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.subtitle{
+    color: rgba(255, 255, 255, 0.757);
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+input::placeholder, select::placeholder {
+    color: rgba(255, 255, 255, 0.546);
+} 
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #6a11cb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #099140d7;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.year, .sem {
+    background-color:indigo;
+}
+
+
+.back-to-login a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.back-to-login{
+    margin-top: 10px;
+    text-decoration: underline;
+    color: white;
+}
+
+.back-to-login a:hover{
+    box-shadow: 10px 5px 15px rgba(5, 5, 5, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+body {
+    background: linear-gradient(to bottom right, #224a40, #25587e);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#forgotPassword {
+    width: 350px;
+    height: 70%;
+    padding: 30px;
+    background-color: rgb(59, 20, 89);
+}
+
+
+#forgotPasswordForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: burlywood;
+} */
+
+
+
+/* 
+#forgotPassword {
+    width: 350px;
+    padding: 30px;
+    background-color: rgb(59, 20, 89);
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+} */
+
+
+
+
+
+
+
+/* 
+h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+} */
+
+
+
+/* 
+label {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+
+input:focus {
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #99f2c8;
+    color: #1f4037;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+button:hover {
+    background: #1f4037;
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.back-to-login {
+    margin-top: 15px;
+}
+
+.back-to-login a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.back-to-login a:hover {
+    color: #99f2c8;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
