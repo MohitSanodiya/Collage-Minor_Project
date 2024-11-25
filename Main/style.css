@@ -1,11 +1,16 @@
 @font-face {
-  font-family: "MyCustomFont";
-  src: url("../Lucy_Said_Ok_Personal_Use.ttf") format("truetype");
+  font-family: "Gilroy";
+  src: url("../Gilroy.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "MyCustomFont2";
-  src: url("../Rolling_Beat_Personal_Use.ttf") format("truetype");
+  font-family: "MyCustomFont";
+  src: url("../Lucy_Said_Ok_Personal_Use.ttf ") format("truetype");
+}
+
+@font-face {
+  font-family: "font-awesome";
+  src: url("../LittleLordFontleroyNF.ttf ") format("truetype");
 }
 
 * {
@@ -61,6 +66,7 @@ body {
   text-align: center;
   justify-content: space-between;
   align-items: center;
+  /* font-family: "Gilroy"; */
 }
 
 
@@ -76,20 +82,22 @@ body {
   gap: 7px;
   color: white;
   margin-left: 10px;
+  font-family: 'gilroy';
 }
 
-#left-nav h1{
-    font-family: "MyCustomFont";
+ #left-nav h1{
+    font-family: "Gilroy";
+    font-size: 22px;
 }
 
 #nav #nav-mid h3 {
   font-weight: 900;
   padding-top: 5px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman, Times, serif";
 }
 
 #nav #nav-mid{
-    margin-left: -10px;
+    margin-left: -20px;
 }
 
 
@@ -102,22 +110,20 @@ body {
 }
 
 #nav-right a {
-  font-size: 27px;
+  font-size: 21px;
   color: white;
   text-decoration: none;
-  font-family: "MyCustomFont";
-  font-weight: 500;
-  /* cursor: pointer; */
+  font-weight: 300;
 }
 
 #nav-right a:hover{
     text-decoration: underline;
-    transition: 0.3s;
 }
+
 
 #main-layout{
     display: flex;
-    flex-direction: column; /* to align content vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 65vh;

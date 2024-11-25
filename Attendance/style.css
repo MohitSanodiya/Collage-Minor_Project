@@ -1,0 +1,235 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  /* padding: 20px; */
+}
+
+.heading{
+  background-color: #252525;
+  color: white;
+  /* color: rgb(84, 152, 115); */
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 20px;
+}
+.left-size-navbar {
+  width: 15%;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #252525; /* Darker color for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: fixed; /* Sidebar stays fixed while scrolling */
+  top: 0;
+  left: 0;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-left-size-navbar-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.left-size-navbar-btn {
+  background-color: #4caf50; /* Green for buttons */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.left-size-navbar-btn:hover {
+  background-color: #66bb6a; /* Lighter green on hover */
+  transform: scale(1.05); /* Slight scaling for effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left-size-navbar-btn i {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.left-size-navbar-btn:last-child {
+  margin-top: auto; /* Push the last button to the bottom */
+}
+
+.left-size-navbar-btn:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}
+
+.main-navbar-container {
+  display: flex;
+  
+}
+
+
+.main-left-size-navbar-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-size-navbar-btn{
+  width: 150px;
+  background-color: #6ebe5c;
+   padding: 10px 20px;
+}
+
+.container {
+  margin-left: 15%; /* Adjust to match sidebar width */
+  width: 85%; /* Remaining space after the sidebar */
+  padding: 40px;
+  border: 1px solid #333;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.filters {
+  display: flex;
+  /* gap: 10px; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-filter-calender {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.filters select,
+.filters input,
+.filters button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.filters button {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #444;
+}
+
+.attendance-section {
+  margin-top: 40px;
+  padding: 15px 0px;
+
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 13px 20px;
+  border-radius: 10px;
+}
+
+.attendance-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.attendance-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.attendance-input .btn {
+  padding: 10px 20px;
+}
+
+.student-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.student-mark {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  margin-bottom: 30px;
+}
+
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+
+.student-list th,
+.student-list td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.student-list tr:hover {
+  background-color: #222;
+}
+
+.list-header {
+  font-size: 15px;
+
+}
+
+.large-input {
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox-size {
+  width: 18px;
+  height: 18px;
+}
+
+.Fotter-btn1 {
+  padding: 5px 13px;
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: aquamarine;
+}
+
+.Fotter-btn2 {
+  padding: 5px 13px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
