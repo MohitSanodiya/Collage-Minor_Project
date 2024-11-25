@@ -60,7 +60,7 @@ body {
   width: 100%;
   /* margin-top: 10px; */
   padding-top: 10px;
-  height: 6vh;
+  height: 5vh;
   color: white;
   display: flex;
   text-align: center;
@@ -86,8 +86,9 @@ body {
 }
 
  #left-nav h1{
-    font-family: "Gilroy";
-    font-size: 22px;
+  font-family: "MyCustomFont";
+    font-size: 32px;
+    font-weight: 200;
 }
 
 #nav #nav-mid h3 {
@@ -110,10 +111,11 @@ body {
 }
 
 #nav-right a {
-  font-size: 21px;
+  font-size: 24px;
   color: white;
   text-decoration: none;
   font-weight: 300;
+  font-family: "MyCustomFont";
 }
 
 #nav-right a:hover{
