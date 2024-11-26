@@ -8,13 +8,13 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 
 #main {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-image: linear-gradient(to top, #023271a3 , #0795218c );
 }
 
 

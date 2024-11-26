@@ -3,7 +3,8 @@
     padding: 0%;
     box-sizing: border-box;
 }
-body{
+
+html, body{
     height: 100%;
     width: 100%;
 }
@@ -11,17 +12,35 @@ body{
 #main{
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    background-image: linear-gradient(to bottom right, #015934,  rgba(7, 49, 123, 0.727));
 }
 
-#main img{
-    height: 100%;
+#nav{
+    background-image: linear-gradient(to bottom right, #028054,  rgb(0, 73, 200));
     width: 100%;
-    object-fit: cover;
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: rgb(188, 188, 188);
 }
 
-#overlay{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+.nav-left{
+    font-size: 12px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.nav-left i{
+    font-size: 24px;
+}
+
+#nav a{
+    color: rgb(188, 188, 188);
+    text-decoration: none;
 }

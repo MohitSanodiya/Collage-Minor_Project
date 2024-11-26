@@ -82,32 +82,24 @@ body {
   gap: 7px;
   color: white;
   margin-left: 10px;
-  font-family: 'gilroy';
 }
 
  #left-nav h1{
-  font-family: "MyCustomFont";
-    font-size: 32px;
-    font-weight: 200;
+    font-size: 28px;
+    font-weight: 900;
 }
 
 #nav #nav-mid h3 {
   font-weight: 900;
   padding-top: 5px;
-  font-family: "Times New Roman, Times, serif";
 }
-
-#nav #nav-mid{
-    margin-left: -20px;
-}
-
 
 #nav-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-right: 40px;
+  margin-right: 40px; 
 }
 
 #nav-right a {
@@ -115,7 +107,6 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 300;
-  font-family: "MyCustomFont";
 }
 
 #nav-right a:hover{
@@ -140,12 +131,12 @@ body {
 }
 
 #main-layout h1{
-    font-family: "MyCustomFont";
+    font-size: 34px; /* Combined font-size into one declaration */
+    /* word-spacing: nowrap; */
     font-weight: 100;
     color: white;
-    font-size: 40px;
     /* padding-top: 10px; */
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     
 }
 

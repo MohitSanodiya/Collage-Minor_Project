@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Attendance Report Download</title>
-  <link rel="icon" href="../img/logo-removebg-preview.png">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="container">
-    <h1 class="title">Attendance Report Download</h1>
-    <form class="form">
-      <div class="radio-group">
-        <label class="radio-option">
-          <input type="radio" name="student" value="all" />
-          <span>All Student</span>
-        </label>
-        <label class="radio-option">
-          <input type="radio" name="student" value="custom" checked />
-          <span>Custom Student</span>
-        </label>
-      </div>
-      <div class="all-input">
-        <div class="input-group">
-          <label for="student-id" class="label">Enter Student ID</label>
-          <input type="type" placeholder="Enter you student ID" id="id-input" class="date-input">
-          </select>
-        </div>
-        <div class="input-group">
-          <label for="start-date" class="label">Start Date</label>
-          <input type="date" id="start-date" name="start-date" class="date-input" />
-        </div>
-        <div class="input-group">
-          <label for="end-date" class="label">End Date</label>
-          <input type="date" id="end-date" name="end-date" class="date-input" />
-        </div>
-      </div>
-      <button type="submit" class="btn">Report Download</button>
-    </form>
-  </div>
-</body>
+    <div id="main">
+        <div id="report">
+            <h1>Download Report</h1>
+            <form action="" method="get">
 
+                <!-- radio button -->
+                <div class="radio-group">
+
+                    <label class="radio-option"> 
+                        <input type="radio" name="student" value="custom" checked />
+                        <i class="fa-regular fa-user"></i>
+                        <span>Custom Student</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="student" value="all" />
+                        <i class="fa-solid fa-users"></i>
+                        <span>All Students</span>
+                    </label>
+                </div>
+
+                <!-- input group -->
+                <div class="input-group">
+                    <label for="student-id" class="label">Enter Student ID</label>
+                    <input type="text" id="student-id" placeholder="Enter your student ID" class="date-input" required />
+                </div>
+                <div class="input-group">
+                    <label for="start-date" class="label">Start Date</label>
+                    <input type="date" id="start-date" name="start-date" class="date-input" required />
+                </div>
+                <div class="input-group">
+                    <label for="end-date" class="label">End Date</label>
+                    <input type="date" id="end-date" name="end-date" class="date-input" required />
+                </div>
+                <!-- button -->
+                <button type="submit" class="btn">Download Report</button>
+            </form>
+        </div>
+    </div>
+</body>
 </html>

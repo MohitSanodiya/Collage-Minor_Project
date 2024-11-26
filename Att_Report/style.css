@@ -1,125 +1,153 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-body {
-  font-family: Helvetica Now Display;
-  background-color: #f8f9fa;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
 }
 
-.container {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 9px 80px rgba(0, 0, 0, 0.1);
-  padding: 40px 40px;
-  width: 450px;
-  height: 570px;
-  text-align: center;
+#main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #002793, #a3069e83 75%, #3d03c3d3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.title {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: #333333;
-  margin-bottom: 50px;
+#report {
+    text-align: center;
+    color: white;
+    height: 90%;
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid white;
+    gap: 15px;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+#report h1 {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-weight: 550;
 }
 
-.radio-group {
-  display: flex;
-  margin-bottom: 20px;
-  justify-content: center;
-  gap: 70px;
+.radio-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.radio-option input {
+    display: none;
 }
 
 .radio-option {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  color: #3f3d3d;
+    background-color: rgba(109, 106, 106, 0.352);
+    /* padding: 8px 16px; */
+    padding: 3px 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.all-input{
-  margin-bottom: 10px;
-  margin-top: 10px;
+.radio-option i {
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 50%;
+    /* border-radius: 50%; */
+    color: #000000;
+    background-color:#c6c6c6;
+}
+
+.radio-option input:checked ~ i {
+    color: #ededed;
+    background: #6a11cb;
 }
 
 
-.radio-option input {
-  margin-right: 8px;
-  accent-color: #007bff;
-}
-
-
+/* Input Group Styling */
 .input-group {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-bottom: 25px;
+    margin-bottom: 20px; /* Spacing between each input field */
+    /* position: relative; */
+    animation: slideInUp 0.5s ease-out; /* Animation effect */
 }
 
+/* Label Styling */
 .label {
-  font-size: 0.9rem;
-  color: #000000;
-  margin-bottom: 5px;
+    font-size: 16px; /* Size of label text */
+    color: #ececec; /* Light grey color */
+    display: block;
+    margin-bottom: 8px; /* Space between label and input */
+    /* text-align: center; */
+    text-align: left;
+    margin-left: 50px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-#id-input,
-.date-input {
-  padding: 10px;
-  font-size: 0.9rem;
-  border: 1px solid #dddddd;
-  border-radius: 6px;
-  width: 100%;
-  box-sizing: border-box;
-}
 
 .date-input {
-  position: relative;
+    width: 80%;
+    padding: 5px 15px; /* Padding inside the input box */
+    border: 2px solid #ccc; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f937; /* Light background color */
+    font-size: 16px;
+    outline: none;
+    color: rgba(255, 255, 255, 0.622);
 }
 
-.date-input::-webkit-datetime-edit-text {
-  visibility: hidden; /* Hide text */
-}
-
-.date-input::-webkit-inner-spin-button,
-.date-input::-webkit-calendar-picker-indicator {
-  position: absolute;
-  right: 10px;
-  color: #333333;
-  cursor: pointer;
-}
-
+/* Focused Input Fields */
 .date-input:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    color: #aaa;
+    border-color: #4A90E2; /* Blue border on focus */
+    background-color: #f9f9f937; /* White background when focused */
+}
+
+/* Input Placeholder Styling */
+.date-input::placeholder {
+    color: #aaa; 
+}
+
+
+/* For Chrome and Safari */
+.date-input::-webkit-calendar-picker-indicator {
+    background-color: transparent; /* Make calendar icon background transparent */
+    color: rgba(255, 255, 255, 0.397); 
+    /* make icon white */
+    filter: invert(1); 
+}
+
+/* Firefox (Optional) */
+.date-input::-moz-calendar-picker-indicator {
+    color: rgba(255, 255, 255, 0.54); /* Change icon color to white */
 }
 
 .btn {
-  background-color: #3c3c57;
-  color: #ffffff;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    padding: 8px 30px;
+    background: linear-gradient(45deg, #1a8a01b2, #1a4d8f98); /* Gradient background */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; /* Added transform transition */
 }
 
 .btn:hover {
-  background-color: #29293b;
+    transition: background 0.3s ease, transform 0.2s ease;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 4px 2px rgba(255, 255, 255, 0.246); /* White shadow effect */
 }
+
+
