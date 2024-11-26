@@ -27,6 +27,7 @@ html, body {
     border-radius: 10px;
     border: 1px solid white;
     gap: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* Added shadow */
 }
 
 #report h1 {
@@ -146,7 +147,7 @@ html, body {
 
 .btn:hover {
     transition: background 0.3s ease, transform 0.2s ease;
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    transform: scale(1.01); /* Slightly enlarge the button on hover */
     box-shadow: 0 4px 2px rgba(255, 255, 255, 0.246); /* White shadow effect */
 }
 
