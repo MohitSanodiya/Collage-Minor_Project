@@ -13,7 +13,7 @@ html, body {
 #main {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #03aca453, #002793, #a3069e83 75%, #3d03c3d3);
+    background: linear-gradient(to right, #03aca453, #002793a6, #76047383 75%, #3d03c39f);
     display: flex;
     justify-content: center;
     align-items: center;

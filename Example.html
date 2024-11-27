@@ -1,11 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(45deg, #1a3c5b, #34b3a0, #9c27b0);
+            background-size: 400% 400%;
+            /* animation: gradientAnimation 10s ease infinite; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Keyframes for the gradient animation */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Heading Styling */
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Table Styling */
+        table {
+            width: 95vw;
+            height: 80vh;
+            background-color: rgba(125, 5, 49, 0.8);
+            border: 3px solid black;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            animation: scaleUp 1s ease;
+        }
+
+        /* Keyframe for scale-up animation */
+        @keyframes scaleUp {
+            0% {
+                transform: scale(0.9);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Header Row Styling */
+        th {
+            background-color: #6a0450;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Day column styling */
+        .DAY {
+            background-color: #8709b1;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            /* animation: bounceIn 1s ease; */
+        }
+
+        /* Keyframe for bounce animation */
+        @keyframes bounceIn {
+            0% {
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(10%);
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Hover Effect for Cells */
+        td:hover, th:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Lab Classes Styling */
+        .Lab {
+            background-color: #056c20;
+            color: #fff;
+        }
+
+        /* Responsive Table Styling */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+                height: auto;
+            }
+
+            th, td {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+        }
+    </style>
 </head>
 <body>
-  
+
+<h1>Class Schedule</h1>
+
+<table>
+
+  <thead>
+    <tr>
+        <th colspan="7">Time Table</th>
+    </tr>
+</thead>
+    <thead>
+        <tr>
+            <th>DAY</th>
+            <th>09:45 AM to 10:45 AM</th>
+            <th>10:45 AM to 11:45 AM</th>
+            <th>11:45 AM to 12:45 PM</th>
+            <th>12:45 PM to 01:25 PM</th>
+            <th>01:25 PM to 02:25 PM</th>
+            <th>02:25 PM to 04:25 PM</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="Mon">
+            <td class="DAY">MONDAY</td>
+            <td>CS 503<br>SN</td>
+            <td>CS 504<br>DP</td>
+            <td>CS 502<br>NG</td>
+            <td class="" colspan="1">LUNCH</td>
+            <td>CS 501<br>VP</td>
+            <td class="Lab" colspan="2">CS506 LAB (CS A)/CS501 LAB (CS B)</td>
+        </tr>
+        <tr>
+            <td class="DAY">TUESDAY</td>
+            <td>CS 503/TNP<br>SN</td>
+            <td>CS 504<br>DP</td>
+            <td>CS 502<br>NG</td>
+            <td class="" colspan="">LUNCH</td>
+            <td>CS 501<br>VP</td>
+            <td class="Lab" colspan="2">CS506 LAB (CS A)/CS501 LAB (CS B)</td>
+        </tr>
+        <tr>
+            <td class="DAY">WEDNESDAY</td>
+            <td>CS 503<br>SN</td>
+            <td>CS 504<br>DP</td>
+            <td>CS 502<br>NG</td>
+            <td class="" colspan="">LUNCH</td>
+            <td>CS 501<br>VP</td>
+            <td class="Lab" colspan="2">CS506 LAB (CS A)/CS501 LAB (CS B)</td>
+        </tr>
+        <tr>
+            <td class="DAY">THURSDAY</td>
+            <td>CS 503<br>SN</td>
+            <td>CS 504<br>DP</td>
+            <td>CS 502<br>NG</td>
+            <td class="" colspan="">LUNCH</td>
+            <td>CS 501<br>VP</td>
+            <td class="Lab" colspan="2">CS506 LAB (CS A)/CS501 LAB (CS B)</td>
+        </tr>
+        <tr>
+            <td class="DAY">FRIDAY</td>
+            <td>CS 503<br>SN</td>
+            <td>CS 504<br>DP</td>
+            <td>CS 502<br>NG</td>
+            <td class="" colspan="">LUNCH</td>
+            <td>CS 501<br>VP</td>
+            <td class="Lab" colspan="2">CS506 LAB (CS A)/CS501 LAB (CS B)</td>
+        </tr>
+        <tr>
+            <td class="DAY">SATURDAY</td>
+            <td>CS 503<br>SN</td>
+            <td>CS 504<br>DP</td>
+            <td>CS 502<br>NG</td>
+            <td class="" colspan="">LUNCH</td>
+            <td>CS 501<br>VP</td>
+            <td class="Lab" colspan="2">CS506 LAB (CS A)/CS501 LAB (CS B)</td>
+        </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
