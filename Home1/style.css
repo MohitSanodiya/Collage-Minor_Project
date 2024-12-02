@@ -32,6 +32,9 @@ html, body{
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-left{
@@ -109,9 +112,8 @@ html, body{
 
 /* Main Layout */
 #main-layout{
-    margin-top: 2vh;
+    margin-top: 7vh;
     color: rgb(209, 206, 206);
-    /* margin-top: 1vh; */
     width: 80%;
     height: 91vh;
     background-color: rgba(255, 255, 255, 0.089);
@@ -119,3 +121,36 @@ html, body{
     border-radius: 10px;
 }
 
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 22px;
+    font-weight: 500;
+    border: 1px solid #00ff44a7;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #023405 10%, rgb(1, 21, 56) 90%);
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.content-bottom h2{
+    /* margin-top: 20px; */
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    border: 2px solid #056c20a7;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #023405 10%, rgb(1, 21, 56) 90%);
+    padding: 10px;
+}
