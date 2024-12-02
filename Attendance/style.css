@@ -46,15 +46,12 @@ body {
 }
 
 .left-size-navbar-btn {
-  /* background-color: #4caf50; Green for buttons */
   background: linear-gradient(135deg, #211e1e, #666464);
-
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  width: 80%;
+  /* padding: 10px 20px; */
+  /* border-radius: 5px; */
+  border-radius: 50px;
   text-align: center;
-  width: 150px;
   cursor: pointer;
   font-size: 16px;
   transition: all 0.3s ease-in-out;
