@@ -11,7 +11,7 @@ function login(){
     if(userType == 'Teacher'){
         // check teacher valid or not
         if(user_id == 'teacher' && password == '54321'){
-            window.location.href = '../Home1/index.html';
+            window.location.href = '../Home/index.html';
         }
         else{
             alert('Invalid username of teacher or password');
