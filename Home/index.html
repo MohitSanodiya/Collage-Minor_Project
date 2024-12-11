@@ -1,49 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dassboard</title>
     <link rel="icon" href="../img/logo-removebg-preview.png">
-    <title>Attendance Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="main">
         <div id="nav">
-            <h1>Teacher Dassboard</h1>
-            <ul>
-                <li><a class="nav-el" href="../Home/index.html">Home</a></li>
-                <li><a class="nav-el" href="../Attendance/index.html">Attendance</a></li>
-                <li><a class="nav-el" href="../St_dsboard/index.html">View</a></li>
-                <li><a class="nav-el" href="../Att_Report/index.html">Report</a></li>
-                <li><a class="nav-el" href="../login/index.html">Log-Out</a></li>
-            </ul>
+            <div class="nav-left">
+                <i class="ri-tent-line"></i>
+                <h1>ClassChronicle</h1>
+            </div>
+            <div class="nav-mid">
+                <h3><a href="../Main/index.html">Home</a></h3>
+                <h3><a href="../Attendance/index.html">Attendance</a></h3>
+                <h3><a href="../Att_Report/index.html">View Report</a></h3>
+                <h3><a href="../St_dsboard/index.html">View Attendance</a></h3>
+                <h3><a href="../login/index.html">Log Out</a></h3>
+            </div>
+            <div class="nav-right">
+                <h1>
+                    <a href="../Example.html">Time Table</a>
+                    <!-- <i class="ri-question-mark"></i> -->
+                </h1>
+            </div>
         </div>
+        <div id="main-layout">
+            <div class="content">
 
-        <!-- main layout -->
-       <div id="main-layout">
-        <h1>Attendance Overview</h1>
-        <div class="cards">
-            <div class="card">
-              <h3>Track Attendance</h3>
-              <p>Mark and review teacher attendance records seamlessly.</p>
+                <h1>Teacher Dashboard</h1>
+
+                <div class="content-bottom">
+                    <h2 class="card">Total Students: <br /> 100</h2>
+                    <h2 class="card">Present Students: <br /> 30</h2>
+                    <h2 class="card">Absent Students: <br /> 70</h2>
+                </div>
             </div>
-            <div class="card">
-              <h3>Update Records</h3>
-              <p>Easily update teacher profiles and attendance logs.</p>
+            <div class="Attendance-section">
+                <h3>Lecturer OverView</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject Code</th>
+                                <th>Subject Name</th>
+                                <th>Lecture/Practice</th>
+                                <th>Present</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS-501</td>
+                                <td>Internet Web Technology</td>
+                                <td>Lecture</td>
+                                <td>14</td>
+                                <td>09:45 AM</td>
+                            </tr>
+                            <tr>
+                                <td>CS-502</td>
+                                <td>Internet Web Technology</td>
+                                <td>Lecture</td>
+                                <td>14</td>
+                                <td>10:45 AM</td>
+                            </tr>
+                            <tr>
+                                <td>CS-501</td>
+                                <td>Internet Web Technology</td>
+                                <td>Lecture</td>
+                                <td>14</td>
+                                <td>11:45 AM</td>
+                            </tr>
+                            <tr>
+                                <td>CS-501</td>
+                                <td>Internet Web Technology</td>
+                                <td>Lecture</td>
+                                <td>14</td>
+                                <td>12:45 AM</td>
+                            </tr>
+                            <tr>
+                                <td> BREAK</td>
+                                <td> BREAK</td>
+                                <td> BREAK</td>
+                                <td> BREAK</td>
+                                <td> BREAK</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>CS-502</td>
+                                <td>Internet Web Technology</td>
+                                <td>Lecture</td>
+                                <td>14</td>
+                                <td>01:25 AM</td>
+                            </tr>
+                            <tr>
+                                <td>CS-502</td>
+                                <td>Internet Web Technology</td>
+                                <td>Practical</td>
+                                <td>14</td>
+                                <td>02:25 AM</td>
+                            </tr>
+                            <tr>
+                                <td>CS-501</td>
+                                <td>Internet Web Technology</td>
+                                <td>Practical</td>
+                                <td>14</td>
+                                <td>04:25 AM</td>
+
+                            </tr>
+                        </tbody>
+                </div>
             </div>
-            <div class="card">
-              <h3>Generate Reports</h3>
-              <p>Create detailed reports for analysis and decision-making.</p>
-            </div>
-          </div>
-       </div>
+        </div>
     </div>
-
-
-
-    <script src="script.js"></script>
 </body>
 
 </html>
